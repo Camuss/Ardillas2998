@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#background{
+	background:url(../imgs/fondo.jpg) top center no-repeat;
+	height:870px; 
+}
+
+#header{
+	width:895px;
+	height:51px;
+	/*background:#960;*/
+	margin:auto;
+}
+
+.logo{
+	float:left;
+}
+
+.social{
+	float:right;
+	margin-top:15px;
+	width:500px;
+	height:27px;
+}
+
+#centerBody{
+	height:459px;
+	background:url(../imgs/trailerAlvin.png) center no-repeat;
+    margin: -729px auto auto;
+    position: relative;
+    width: 850px;
+    z-index: 10;
+	
+}
+
+.video-js-box{
+	width:591px;
+	height:366px;
+	left: 115px;
+    top: 35px;
+	background:#000;
+}
+
+#disclousure{
+	width:921px;
+	height:29px;
+	margin:auto;
+}
+
+#banners{
+	background:url(../imgs/banners.png) center no-repeat;
+	width:890px;
+	height:124px;
+	margin:auto;
+	margin-top:55px;
+}
+
+#tw{
+	display:block;
+	width:30px;
+	height:25px;
+	background:url(../imgs/tw.png);
+}
+
+a#tw:link { background-position: top left; }
+a#tw:hover { background-position: top right!important; }
+
+
+#fb{
+	display:block;
+	width:26px;
+	height:25px;
+	background:url(../imgs/fb.png);
+}
+
+a#fb:link { background-position: top left; }
+a#fb:hover { background-position: top right!important; }
+
+
+#mailb{
+	display:block;
+	width:31px;
+	height:25px;
+	background:url(../imgs/mail.png);
+}
+
+a#mailb:link { background-position: top left; }
+a#mailb:hover { background-position: top right!important; }
+
+
+#session{
+	display:block;
+	width:28px;
+	height:25px;
+	background:url(../imgs/cerrarSession.png);
+}
+
+
+/* Menu Navegacion */
+
+#navigation
+{
+	width:915px;
+	height:45px;
+	margin:12px auto;
+	overflow:hidden;
+	
+}
+
+#trailer{
+	display:block;
+	width:120px;
+	height:68px;
+	background:url(../imgs/trailer.png);
+}
+
+a#trailer:link { background-position: top left; }
+a#trailer:hover { background-position: top right!important; }
+a#trailer:active { background-position: bottom left!important; }
+
+#juegos{
+	display:block;
+	width:117px;
+	height:68px;
+	background:url(../imgs/juegos.png);
+}
+
+a#juegos:link { background-position: top left; }
+a#juegos:hover { background-position: top right!important; }
+a#juegos:active { background-position: bottom left!important; }
+
+#premios{
+	display:block;
+	width:178px;
+	height:68px;
+	background:url(../imgs/premios.png);
+}
+
+a#premios:link { background-position: top left; }
+a#premios:hover { background-position: top right!important; }
+a#premios:active { background-position: bottom left!important; }
+
+#promociones{
+	display:block;
+	width:178px;
+	height:68px;
+	background:url(../imgs/promo.png);
+}
+
+a#promociones:link { background-position: top left; }
+a#promociones:hover { background-position: top right!important; }
+a#promociones:active { background-position: bottom left!important; }
+
+#terminosM{
+	display:block;
+	width:222px;
+	height:68px;
+	background:url(../imgs/terminos.png);
+}
+
+a#terminosM:link { background-position: top left; }
+a#terminosM:hover { background-position: top right!important; }
+a#terminosM:active { background-position: bottom left!important; }
+
+#nada{
+	display:block;
+	width:99px;
+	height:68px;
+	background:url(../imgs/middleBar.png);
+}
+
+#logoAlvin
+{
+	z-index:25;
+	position:absolute;
+	left:50%;
+	margin-left:-86px;
+	margin-top:-93px;
+}
+
+/* Premios */
+#centerzBody{
+	height:459px;
+	background:url(../imgs/premiosScreen3.png) center no-repeat;
+    margin: -729px auto auto;
+    position: relative;
+    width: 922px;
+    z-index: 10;
+	
+} 
+
+.fullText{
+	color: white;
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    height: 265px;
+    margin: 90px 0 0 35px;
+    overflow:auto;
+    position: absolute;
+    width: 580px;
+}
+
+#terminosCond{
+	width:656px;
+	height:365px;
+	/*background:#FF9;*/
+	position:relative;
+	margin:auto;
+	left:3px;
+    top: 55px;
+    width: 656px;
+}
+
+
+/* Terminos y condiciones */ 
+#centerzxBody{
+	height:459px;
+	background:url(../imgs/premiosScreen3.png) center no-repeat;
+    margin: -729px auto auto;
+    position: relative;
+    width: 922px;
+    z-index: 10;
+	
+} 
+
+.premiosBox{
+	color: white;
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    height: 305px;
+    margin: 60px 0 0 35px;
+    overflow:auto;
+    position: absolute;
+    width: 580px;
+}
+
+#descPrem{
+	width:287px;
+	height:122px;
+}
+
+.leftx{
+	width:295px;
+	height:220px;
+	margin-top: 35px;
+	position:absolute;
+	/*margin: 0 0 0 15px;
+	text-align:center;*/
+}
+
+.rightx{
+	width:270px;
+	height:220px;
+	position:absolute;
+	margin: 0 0 0 300px;
+	
+	/*text-align:center;*/
+}
+
+.borderCard{
+	height:173px;
+	background:url(../imgs/boxCard.png) no-repeat;
+	display:block;
+	padding: 12px 10px 0 15px;
+    width: 250px;
+}
+
+.footx{
+	margin-top:232px;
+	width: 620px;
+}
+
+.controls #uno{
+}
+
+.controls #dos{
+}
+
+.controls #tres{
+}
+
+#uno, #dos, #tres{
+	display:block;
+	width:11px;
+	height:12px;
+	background:url(../imgs/radioButton.png);
+}
+
+a#uno:link { background-position: top left; }
+a#uno:hover { background-position: top right!important; }
+
+a#dos:link { background-position: top left; }
+a#dos:hover { background-position: top right!important; }
+
+a#tres:link { background-position: top left; }
+a#tres:hover { background-position: top right!important; }
+
+#atras, #adelante{
+	display:block;
+	width:21px;
+	height:23px;
+}
+
+#atras{
+	
+}
+
+#adelante{
+	
+}
+
+.back, .forward{
+	/*display:inline;*/
+}
+
+.back{
+	float:left;
+	margin-left:75px;
+	background:url(../imgs/atras.png);
+}
+
+.forward{
+	float:right;
+	margin-right:72px;
+	background:url(../imgs/adelante.png);
+}
+
+.moves{
+	width:80px;
+	height:12px;
+	display:block;
+	margin-top: 5px;
+	float:left;
+}
+
+#botonTerminos{
+	background: url("../imgs/bigButton.png") repeat scroll 0 0 transparent;
+    bottom: -15px;
+    display: block;
+    height: 36px;
+    position: absolute;
+    width: 255px;
+}
+
+a#botonTerminos:link { background-position: top left; }
+a#botonTerminos:hover { background-position: top right!important; }
+
+#oficinas{
+	background: url("../imgs/mediumBotton.png") repeat scroll 0 0 transparent;
+    bottom: -50px;
+    display: block;
+    height: 36px;
+    left: 57px;
+    position: absolute;
+    width: 157px;
+}
+
+a#oficinas:link { background-position: top left; }
+a#oficinas:hover { background-position: top right!important; }
+
+
+#bienvenido{
+	width:650px;
+	height:332px;
+	margin:auto;
+	position:relative;
+	top: 55px;
+}
+
+.saludo{
+	position:relative;
+	top:80px;
+	left:10px;
+	color: white;
+    font-size: 13px;
+    font-weight: lighter;
+	display:block;
+}
+
+#mensajeSaludo{
+	width:600px;
+	margin:auto;
+}
+
+#siguiente{
+	display:block;
+	width:157px;
+	height:36px;
+	background:url(../imgs/siguiente.png);
+	margin:auto;
+}
+
+#gameA{
+	display:block;
+	width:157px;
+	height:36px;
+	background:url(../imgs/buscaArdillas.png);
+	margin:auto;
+}
+
+#gameB{
+	display:block;
+	width:157px;
+	height:36px;
+	background:url(../imgs/alvinCulinaria.png);
+	margin:auto;
+}
+
+#seleccionJuego{
+	width:650px;
+	height:332px;
+	margin:auto;
+	position:relative;
+	top: 55px;
+
+}
+
+.botonesJuegos{
+	position:relative;
+	top:120px;
+	left:10px;
+	color: white;
+    font-size: 13px;
+    font-weight: lighter;
+	display:block;
+}

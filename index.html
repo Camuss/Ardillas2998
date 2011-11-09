@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/MainTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+      
+      
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta property="og:title" content="BBVA Continental :: Alvin y las Ardillas" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.alvinadelante.com" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="BBVA Continental :: Alvin y las Ardillas" />
+<meta property="fb:admins" content="1134009511" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>BBVA Continental :: Alvin y las Ardillas</title>
+<!-- InstanceEndEditable -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/alvin.css" rel="stylesheet" type="text/css" />
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- InstanceBeginEditable name="head" -->
+  
+  	<!-- Include the VideoJS Library -->
+	<script src="h5player/video.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+        // Must come after the video.js library
+    
+        // Add VideoJS to all video tags on the page when the DOM is ready
+        VideoJS.setupAllWhenReady();
+    
+        /* ============= OR ============ */
+    
+        // Setup and store a reference to the player(s).
+        // Must happen after the DOM is loaded
+        // You can use any library's DOM Ready method instead of VideoJS.DOMReady
+    
+        /*
+        VideoJS.DOMReady(function(){
+          
+          // Using the video's ID or element
+          var myPlayer = VideoJS.setup("example_video_1");
+          
+          // OR using an array of video elements/IDs
+          // Note: It returns an array of players
+          var myManyPlayers = VideoJS.setup(["example_video_1", "example_video_2", video3Element]);
+    
+          // OR all videos on the page
+          var myManyPlayers = VideoJS.setup("All");
+    
+          // After you have references to your players you can...(example)
+          myPlayer.play(); // Starts playing the video for this player.
+        });
+        */
+    
+        /* ========= SETTING OPTIONS ========= */
+    
+        // Set options when setting up the videos. The defaults are shown here.
+    
+        
+        VideoJS.setupAllWhenReady({
+          controlsBelow: false, // Display control bar below video instead of in front of
+          controlsHiding: true, // Hide controls when mouse is not over the video
+          defaultVolume: 0.85, // Will be overridden by user's last volume if available
+          flashVersion: 9, // Required flash version for fallback
+          linksHiding: true // Hide download links when video is supported
+        });
+        
+    
+        // Or as the second option of VideoJS.setup
+        
+        /*
+        VideoJS.DOMReady(function(){
+          var myPlayer = VideoJS.setup("example_video_1", {
+            // Same options
+          });
+        });
+        */
+    
+      </script>
+  
+  
+	 <!-- Include the VideoJS Stylesheet -->
+ 	 <link rel="stylesheet" href="h5player/video-js.css" type="text/css" media="screen" title="Video JS" />
+     
+  <!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=303357076356685";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="content">
+
+	<div id="background">
+    
+    	<div id="header">
+        	<div class="logo"><img src="imgs/bbva.png" alt="Logo BBVA" title="BBVA Continental" /></div>
+            <div class="social">
+                <span style="float:right">
+                	<ul>
+                    	<li><a id="tw" href="http://www.twitter.com/#!/ContinentalBBVA" target="_blank"></a> </li>
+                        <li><a id="fb" href="http://www.facebook.com/BBVAContinental" target="_blank"></a></li>
+                        <li><a id="mailb" href="http://www.a1peru.com" target="_blank"></a></li>
+						<li id="cerrarSesion" style="display:none"><a id="session" href="closeA.php"></a></li>                        
+                        
+                    </ul>
+                </span>
+           	  <span style="float:right; margin-top:3px;"><fb:like href="http://www.alvinadelante.com" send="false" layout="button_count" width="115" show_faces="false"></fb:like></span>
+          </div>
+        </div>
+        
+        
+         <div id="navigation">
+        	<ul>
+            	<li><a id="trailer" href="index.html"></a></li>
+                <li><a id="juegos" href="juegos.php"></a></li>
+                <li><a id="premios" href="premios.html"></a></li>
+                <li><a id="nada" href="#"></a></li>
+                <li><a id="promociones" href="#"></a></li>
+                <li><a id="terminosM" href="terminos.html"></a></li>
+            </ul>
+        </div>
+        
+        <div id="logoAlvin">
+        	<img src="imgs/alvinLogo.png" alt="Logo Alvin y las Ardillas 3" title="Alvin y las Ardillas 3" />
+        </div>
+        
+		</div> <!-- fin div header -->
+		
+		<!-- InstanceBeginEditable name="BodyContent" -->
+		<div id="centerBody">
+		  <!-- Begin VideoJS -->
+		  <div class="video-js-box">
+		    <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+		    <video class="video-js" width="591" height="366" controls="controls" preload="preload" poster="imgs/previewVideo.jpg">
+		      <source src="ardillas3.mp4" type='video/mp4; codecs=avc1.42E01E, mp4a.40.2' />
+		      <source src="ardillas3.webm" type='video/webm; codecs=vp8, vorbis' />
+		      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+		      <object id="flash_fallback_1" class="vjs-flash-fallback" width="591" height="366" type="application/x-shockwave-flash" 
+                    data="flowplayer-3.2.1.swf">
+		        <param name="movie" value="flowplayer-3.2.1.swf" />
+		        <param name="allowfullscreen" value="true" />
+		        <param name="flashvars" 
+                      value='config={"playlist":["imgs/previewVideo.jpg", {"url": "ardillas3.mp4","autoPlay":false,"autoBuffering":true}]}' />
+		        <!-- Image Fallback. Typically the same as the poster image. -->
+		        <img src="imgs/previewVideo.jpg" width="591" height="366" alt="Poster Image" 
+                      title="No video playback capabilities." />
+	          </object>
+	        </video>
+		    
+	      </div>
+		  <!-- End VideoJS -->
+	    </div>
+		<!-- InstanceEndEditable --><!-- fin div centerBody -->
+        
+        
+      <div id="disclousure">
+        	<img src="imgs/disclousure.png" alt="Alvin y las Ardillas 3" title="Veala gracias al BBVA Continental" />
+        </div> <!-- FIn Disclousure -->
+        
+        <div id="banners">
+        </div>
+    
+    </div>
+
+
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	background:#e9c77e url(../imgs/pixel.jpg) repeat-x;
+	font-family:'StagSansLight', Arial, Helvetica, sans-serif;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+li{
+	float:left;
+}
+
+input[type="text"], input[type="password"] , input[type="email"]{
+	margin:3px;
+	border:solid 0 #fff;
+	background: transparent url(../imgs/textField.png) no-repeat;
+	color:#d8b787;
+	width:225px;
+	height:31px;
+	padding:0 10px;
+}
+
+select{
+	width:245px;
+	height:31px;
+	border:solid 0 #fff;
+	padding:5px 10px;
+	font-size:13px;
+	color:#d8b787;
+	background: transparent url(../imgs/textField.png) no-repeat;
+}
+
+select>option{
+	background:#6C3108;
+}

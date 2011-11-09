@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script>
+function registro_cliente(){
+	var datos=$('#datos').val();
+	var doc=$('#doc').val();
+	var mail=$('#mail').val();
+	var remail=$('#remail').val();
+	var departamento= $('#departamento option:selected').val();
+	var provincia=$('#provincia option:selected').val();
+	var distrito=$('#distrito option:selected').val();
+	var telefono=$('#telefono').val();
+	var smartphone=$("#smartphone").attr("checked");
+	var terminos=$("#terminos").attr("checked");
+	if(terminos){
+		if(smartphone){
+			tsmartphone='si';
+		}else{
+			tsmartphone='no';
+		}
+		if($("input[name='tiposmartphone']").attr("checked")){
+			var tiposmartphone = $("input[name='tiposmartphone']:checked").val(); 
+		}else{
+			var tiposmartphone = ''; 
+		}
+		$.ajax({
+		type   : 'POST',
+		url    : 'admin/registrar.php',
+		data   : 'datos='+datos+'&doc='+doc+'&mail='+mail+'&departamento='+departamento+'&provincia='+provincia+'&distrito='+distrito+'&tsmartphone='+tsmartphone+'&tiposmartphone='+tiposmartphone+'&telefono='+telefono+'&cliente=si',
+		dataType: 'json',
+		success: function(msg){
+				//msg.estado
+				/*
+				retorna un valor: estado
+				estado = 0 : usuario ya registrado
+				estado = 1 : se registro el usuario
+				estado = 2 : error en el registro(error query)
+				*/
+			}
+		});			
+	}else{
+		alert('debes aceptar los terminos');
+	}	
+}
+</script>
+</head>
+<body>
+registro clientes<br />
+nombre y apellidos <input type="text" name="datos" id="datos" /><br />
+nro documento <input type="text" name="doc" id="doc" /><br />
+email <input type="text" name="mail" id="mail" /><br />
+repetir email <input type="text" name="remail" id="remail" /><br />
+departamento <select name="departamento" id="departamento"><option value="1">lima</option></select><br />
+provincia <select name="provincia" id="provincia"><option value="1">lima</option></select><br />
+distrito <select name="distrito" id="distrito"><option value="1">lima</option></select><br />
+telefono <input type="text" name="telefono" id="telefono" /><br />
+tienes smartphone<input type="checkbox" name="smartphone" id="smartphone" /><br />
+blackberry<input type="radio" name="tiposmartphone" value="blackberry" />iphone<input type="radio" name="tiposmartphone" value="iphone" />otros<input type="radio" name="tiposmartphone" value="otros" />
+terminos<input type="checkbox" name="terminos" id="terminos" />
+<input type="button" name="ingresar_cli" id="ingresar_cli" value="ingresar" onclick="javascript:registro_cliente();" />
+</body>
+</html>
